@@ -22,3 +22,10 @@ A CDN allows for the quick transfer of assets needed for loading Internet conten
 
 A properly configured CDN may also help protect websites against some common malicious attacks, such as Distributed Denial of Service (DDOS) attacks.
 
+**4.What is crossorigin in script tag?**
+
+The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+Web pages often make requests to load resources on other servers. Here is where CORS comes in.
+A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+
+5.
