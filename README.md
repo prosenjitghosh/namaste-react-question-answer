@@ -28,4 +28,25 @@ The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
 Web pages often make requests to load resources on other servers. Here is where CORS comes in.
 A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
 
-5.
+**5.What is async and defer?**
+
+async - The browser will download the script file and continue parsing HTML parallelly until the file is downloaded. The file is executed as soon as it is downloaded.
+
+defer - The browser will download the script and do HTML parsing at the same time. After parsing is done, the script files are executed in the order of their occurrence.
+
+**6.What is Emmet?**
+
+Emmet is a plug in for many popular text editors which greatly improves HTML & CSS workflow.
+
+**7.What is difference between react.development.js and react.production.js files via CDN?**
+
+The development build is used - as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds.
+
+The production build, on the other hand, runs in production mode which means this is the code running on your client's machine. The production build runs uglify and builds your source files into one or multiple minimized files. It also extracts CSS and images and of course any other sources you're loading with Webpack. There's also no hot reloading included. Source Maps might be included as separate files depending on your webpack devtool settings.
+
+What specifically separates production from development is dependent on your preferences and requirements, which means it pretty much depends on what you write in your Webpack configuration.
+
+**8.What is diference between React and ReactDOM?**
+
+React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.This two was separated since react was lunch for mobile (react nativ) as  well.
+
