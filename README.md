@@ -1,5 +1,7 @@
 # namaste-react-question-answer
 
+Lesson 1
+
 **1.What is diference between React and ReactDOM ?**
 
 The react package holds the react source for components, state, props and all the code that is react.
@@ -49,4 +51,37 @@ What specifically separates production from development is dependent on your pre
 **8.What is diference between React and ReactDOM?**
 
 React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.This two was separated since react was lunch for mobile (react nativ) as  well.
+
+_______________________
+Lesson 4
+_______________________
+
+1.Is Jsx mandatory for React?
+No. You can use  React.createElement("div",{id:"root"},"Hello World");
+
+2.Is ES5 mandatory for React?
+No. You can use other lower version as well.
+
+3. {TitleComponent} vs <TitleComponent/> vs <TitleComponent></TitleComponent> in JSX
+First Title component is Variable place holder and other two are functional component. Last two are same one is just self closing.
+
+4.How can I write comments in JSX?
+In JSX you can comment exactly like JavaScript withing {}.
+const commentedCode=()=>{
+  return (
+    <>
+      <div>Hello World<div>
+      {//This is single line comment}
+      {
+        /*This
+        is multiline
+        comments
+        */
+      }
+    <>
+};
+
+5.What is <React.Fragment></React.Fragment> and <></> ?
+Both are same,second one is just shorter way to write it.
+A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes(like div) to the DOM.
 
